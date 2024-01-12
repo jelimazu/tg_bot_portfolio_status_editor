@@ -12,7 +12,6 @@ logger.addHandler(handler)
 
 config = configparser.ConfigParser()
 config.read('settings.ini', encoding='utf-8')
-print(config.sections())
 data = config["settings"]
 token = data["token"]
 channel_username = data["channel_username"]
